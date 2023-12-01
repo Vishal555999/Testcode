@@ -1,0 +1,21 @@
+How to run--
+>Open project
+>open testng.xml
+>right click -->run as testNg
+
+
+Test Strategy-->
+-This is a maven project i have used and add some dependency in pom.xml
+-There are two folders src/main/java---> All the pom classes and utility classes like element action(implicit wait, explicit wait are there
+- Fetching data from property file i have used apache pOI and mentioned utilty class under the src/main/java
+-base test class== Opening and closing the browser we have mentioned tht code under the base class 
+In @beforesuite we have open URl and maximize the window and same in @aftersuite driver will close after each test case execution
+-- src/test/java-
+Test class=== first we have extends the base class in test class to use the method of it
+
+-and then by using testng we have arrange the test cases and design the class and run this test using testNg annotation(@Test)
+-soft assert class we hae for validations
+-for some element like consent radio button and submit we have use explicit wait to make load element properly.
+
+
+
